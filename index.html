@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,154 +8,100 @@
 
 <title>Frederico Júnior Pereira Evangelista</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-font-family:'Poppins',sans-serif;
-background:#f5f7fb;
+font-family:Poppins;
+margin:0;
+background:#f4f7fb;
 color:#333;
-line-height:1.6;
 }
 
 header{
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background:linear-gradient(120deg,#1f3c6b,#3a6ea5);
 color:white;
-padding:100px 20px;
 text-align:center;
+padding:90px 20px;
 }
 
 .profile{
-width:160px;
-height:160px;
+width:170px;
+height:170px;
 border-radius:50%;
 border:5px solid white;
 margin-bottom:20px;
 }
 
-header h1{
-font-size:42px;
+h1{
+margin:10px;
+font-size:40px;
 }
 
-header p{
+.subtitle{
 font-size:20px;
 opacity:0.9;
-}
-
-.linkedin{
-display:inline-block;
-margin-top:20px;
-padding:12px 26px;
-background:#0077b5;
-color:white;
-text-decoration:none;
-border-radius:6px;
-}
-
-nav{
-background:white;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-}
-
-nav ul{
-display:flex;
-justify-content:center;
-list-style:none;
-}
-
-nav li{
-margin:0 15px;
-}
-
-nav a{
-display:block;
-padding:16px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-nav a:hover{
-color:#0077b5;
 }
 
 .container{
 max-width:1100px;
 margin:auto;
-padding:60px 20px;
+padding:50px 20px;
 }
 
-.section-title{
-text-align:center;
-margin-bottom:40px;
+.section{
+margin-bottom:60px;
 }
 
-.section-title h2{
-font-size:32px;
-color:#203a43;
+.section h2{
+color:#1f3c6b;
+margin-bottom:20px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-margin-bottom:25px;
+border-radius:8px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+margin-bottom:20px;
 }
 
 .timeline{
-border-left:3px solid #0077b5;
+border-left:4px solid #3a6ea5;
 padding-left:20px;
 }
 
-.timeline-item{
-margin-bottom:25px;
+.timeline div{
+margin-bottom:20px;
+}
+
+.button{
+display:inline-block;
+padding:14px 24px;
+background:#1f3c6b;
+color:white;
+border-radius:6px;
+text-decoration:none;
+margin-top:20px;
 }
 
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
+gap:15px;
 }
 
 .skill{
 background:white;
-padding:18px;
-border-radius:8px;
-text-align:center;
-box-shadow:0 4px 10px rgba(0,0,0,0.07);
-}
-
-.publication{
-background:white;
-padding:20px;
-border-left:5px solid #0077b5;
-margin-bottom:20px;
-}
-
-.cv-button{
-display:block;
-width:250px;
-margin:20px auto;
-padding:14px;
-text-align:center;
-background:#203a43;
-color:white;
+padding:15px;
 border-radius:6px;
-text-decoration:none;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
 footer{
-background:#203a43;
+background:#1f3c6b;
 color:white;
 text-align:center;
 padding:30px;
@@ -172,157 +119,147 @@ padding:30px;
 
 <h1>Frederico Júnior Pereira Evangelista</h1>
 
-<p>Governança | Integridade | Compliance | Gestão Pública</p>
+<p class="subtitle">
 
-<a class="linkedin" href="https://www.linkedin.com/in/frederico-jr-pereira-evangelista-755293ab/" target="_blank">
-LinkedIn
-</a>
+Governança • Integridade • Compliance • Gestão Pública
+
+</p>
+
+<p>
+
+<a class="button" href="curriculo.pdf">Baixar Currículo</a>
+
+</p>
 
 </header>
 
-<nav>
-<ul>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#experiencia">Experiência</a></li>
-<li><a href="#publicacoes">Publicações</a></li>
-<li><a href="#competencias">Competências</a></li>
-<li><a href="#curriculo">Currículo</a></li>
-<li><a href="#contato">Contato</a></li>
-</ul>
-</nav>
-
 <div class="container">
 
-<section id="sobre">
+<div class="section">
 
-<div class="section-title">
 <h2>Sobre</h2>
-</div>
 
 <div class="card">
 
-<p>
+Profissional com atuação em governança institucional, gestão estratégica,
+compliance e gestão de riscos no setor público. Atua na implementação de
+programas de integridade, planejamento estratégico e melhoria da gestão
+organizacional.
 
-Profissional com atuação na área pública voltada à governança institucional,
-gestão de riscos, integridade e compliance. Possui experiência na elaboração
-de políticas institucionais e programas de integridade no setor público.
-
-</p>
-
-<p>
-
-Atua no desenvolvimento de práticas administrativas alinhadas à ética,
-transparência, accountability e melhoria contínua da gestão pública.
-
-</p>
+Mestre em Economia pela UFRGS, MBA em Controladoria e Contabilidade
+Pública pela FGV e MBA em Compliance e ESG pela USP.
 
 </div>
 
-</section>
+</div>
 
-<section id="experiencia">
+<div class="section">
 
-<div class="section-title">
 <h2>Experiência Profissional</h2>
-</div>
 
 <div class="timeline">
 
-<div class="timeline-item">
-<h3>Tribunal de Justiça do Estado de Roraima</h3>
-<p>Atuação em governança, integridade e compliance institucional.</p>
-</div>
+<div>
 
-<div class="timeline-item">
-<h3>Projetos de Governança Pública</h3>
-<p>Participação em iniciativas de gestão estratégica e integridade institucional.</p>
-</div>
+<b>Tribunal de Justiça do Estado de Roraima</b><br>
+Assessor Técnico – 2022 / Atual
 
 </div>
 
-</section>
+<div>
 
-<section id="publicacoes">
-
-<div class="section-title">
-<h2>Publicações</h2>
-</div>
-
-<div class="publication">
-
-<h3>Integridade e Governança no Setor Público</h3>
-
-<p>Reflexões sobre a implementação de programas de integridade no poder público.</p>
+<b>Hiroshi Consultoria Empresarial</b><br>
+Consultor Financeiro – 2019 / 2022
 
 </div>
 
-<div class="publication">
+<div>
 
-<h3>Gestão de Riscos e Compliance Institucional</h3>
-
-<p>Análise da importância da gestão de riscos na administração pública.</p>
+<b>Eletrobras Distribuição Roraima</b><br>
+Analista Contábil e Funções Executivas – 2003 / 2019
 
 </div>
 
-</section>
+</div>
 
-<section id="competencias">
+</div>
 
-<div class="section-title">
+<div class="section">
+
+<h2>Formação Acadêmica</h2>
+
+<div class="card">
+
+Mestrado em Economia – UFRGS<br><br>
+
+MBA em Compliance e ESG – USP (em andamento)<br><br>
+
+MBA em Perícia, Contabilidade Pública e Controladoria – FGV<br><br>
+
+Bacharel em Ciências Contábeis – UPIS
+
+</div>
+
+</div>
+
+<div class="section">
+
 <h2>Competências</h2>
-</div>
 
 <div class="skills">
 
 <div class="skill">Governança Pública</div>
+
 <div class="skill">Compliance</div>
+
 <div class="skill">Gestão de Riscos</div>
+
 <div class="skill">Planejamento Estratégico</div>
-<div class="skill">Ética Institucional</div>
+
+<div class="skill">Contabilidade Pública</div>
+
+<div class="skill">Gestão Financeira</div>
+
+<div class="skill">Controle Interno</div>
+
 <div class="skill">Políticas de Integridade</div>
-<div class="skill">Gestão Pública</div>
 
 </div>
 
-</section>
-
-<section id="curriculo">
-
-<div class="section-title">
-<h2>Currículo</h2>
 </div>
 
-<a class="cv-button" href="curriculo.pdf" download>
-Baixar Currículo em PDF
-</a>
+<div class="section">
 
-</section>
-
-<section id="contato">
-
-<div class="section-title">
-<h2>Contato</h2>
-</div>
+<h2>Links</h2>
 
 <div class="card">
 
-<p>LinkedIn:</p>
-
-<a href="https://www.linkedin.com/in/frederico-jr-pereira-evangelista-755293ab/" target="_blank">
+LinkedIn  
+<br>
+<a href="https://linkedin.com/in/frederico-jr-pereira-evangelista-755293ab">
 linkedin.com/in/frederico-jr-pereira-evangelista
+</a>
+
+<br><br>
+
+Lattes  
+<br>
+<a href="http://lattes.cnpq.br/9738401556304717">
+lattes.cnpq.br/9738401556304717
 </a>
 
 </div>
 
-</section>
+</div>
 
 </div>
 
 <footer>
 
-<p>© 2026 – Frederico Júnior Pereira Evangelista</p>
+© 2026 – Frederico Júnior Pereira Evangelista
 
 </footer>
 
 </body>
+
 </html>
