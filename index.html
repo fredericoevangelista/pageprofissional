@@ -32,6 +32,7 @@ height:170px;
 border-radius:50%;
 border:5px solid white;
 margin-bottom:20px;
+object-fit:cover;
 }
 
 h1{
@@ -98,6 +99,15 @@ padding:15px;
 border-radius:6px;
 box-shadow:0 3px 10px rgba(0,0,0,0.1);
 text-align:center;
+cursor:pointer;
+border:none;
+font-family:Poppins;
+font-size:15px;
+}
+
+.skill:hover{
+background:#1f3c6b;
+color:white;
 }
 
 footer{
@@ -105,6 +115,10 @@ background:#1f3c6b;
 color:white;
 text-align:center;
 padding:30px;
+}
+
+a{
+color:#1f3c6b;
 }
 
 </style>
@@ -120,71 +134,82 @@ padding:30px;
 <h1>Frederico Júnior Pereira Evangelista</h1>
 
 <p class="subtitle">
-
 Governança • Integridade • Compliance • Gestão Pública
-
 </p>
-
-<p>
 
 <a class="button" href="curriculo.pdf">Baixar Currículo</a>
 
-</p>
-
 </header>
+
 
 <div class="container">
 
-<div class="section">
+
+<section class="section">
 
 <h2>Sobre</h2>
 
 <div class="card">
 
-Profissional com atuação em governança institucional, gestão estratégica,
-compliance e gestão de riscos no setor público. Atua na implementação de
-programas de integridade, planejamento estratégico e melhoria da gestão
-organizacional.
+Profissional com atuação em governança institucional, planejamento estratégico,
+compliance e gestão de riscos no setor público. Mestre em Economia pela UFRGS,
+MBA em Controladoria pela FGV e MBA em Compliance e ESG pela USP (em andamento).
 
-Mestre em Economia pela UFRGS, MBA em Controladoria e Contabilidade
-Pública pela FGV e MBA em Compliance e ESG pela USP.
-
-</div>
+Atua na implementação de programas de integridade, monitoramento de desempenho
+institucional e apoio à alta administração em decisões estratégicas.
 
 </div>
 
-<div class="section">
+</section>
 
-<h2>Experiência Profissional</h2>
+
+<section class="section">
+
+<h2>Trajetória Profissional</h2>
 
 <div class="timeline">
 
 <div>
-
+<h3>2022 – Atual</h3>
 <b>Tribunal de Justiça do Estado de Roraima</b><br>
-Assessor Técnico – 2022 / Atual
-
+Assessor Técnico. Atuação na revisão do Plano Estratégico Institucional,
+implementação do Programa de Integridade e Compliance e gestão de riscos.
 </div>
 
 <div>
-
+<h3>2019 – 2022</h3>
 <b>Hiroshi Consultoria Empresarial</b><br>
-Consultor Financeiro – 2019 / 2022
-
+Consultor contábil e financeiro com atuação em planejamento financeiro,
+dashboards de indicadores e adequação contábil às normas internacionais.
 </div>
 
 <div>
-
+<h3>2003 – 2019</h3>
 <b>Eletrobras Distribuição Roraima</b><br>
-Analista Contábil e Funções Executivas – 2003 / 2019
+Analista Contábil e funções executivas nas áreas de finanças,
+contabilidade e assessoria à diretoria.
+</div>
 
+<div>
+<h3>2015 – 2017</h3>
+<b>Companhia de Eletricidade do Amapá</b><br>
+Assessor Executivo da Diretoria Administrativa e Financeira
+(cessão institucional).
+</div>
+
+<div>
+<h3>2012 – 2015</h3>
+<b>Eletrobras Distribuição Amazonas</b><br>
+Assessor Executivo da Diretoria de Gestão
+(cessão institucional).
 </div>
 
 </div>
 
-</div>
+</section>
 
-<div class="section">
+
+<section class="section">
 
 <h2>Formação Acadêmica</h2>
 
@@ -200,59 +225,65 @@ Bacharel em Ciências Contábeis – UPIS
 
 </div>
 
-</div>
+</section>
 
-<div class="section">
+
+
+<section class="section">
 
 <h2>Competências</h2>
 
 <div class="skills">
 
-<div class="skill">Governança Pública</div>
+<button class="skill" onclick="mostrar('gov')">Governança Pública</button>
 
-<div class="skill">Compliance</div>
+<button class="skill" onclick="mostrar('comp')">Compliance</button>
 
-<div class="skill">Gestão de Riscos</div>
+<button class="skill" onclick="mostrar('riscos')">Gestão de Riscos</button>
 
-<div class="skill">Planejamento Estratégico</div>
+<button class="skill" onclick="mostrar('planejamento')">Planejamento Estratégico</button>
 
-<div class="skill">Contabilidade Pública</div>
+<button class="skill" onclick="mostrar('contabilidade')">Contabilidade Pública</button>
 
-<div class="skill">Gestão Financeira</div>
+<button class="skill" onclick="mostrar('financeira')">Gestão Financeira</button>
 
-<div class="skill">Controle Interno</div>
+<button class="skill" onclick="mostrar('controle')">Controle Interno</button>
 
-<div class="skill">Políticas de Integridade</div>
-
-</div>
+<button class="skill" onclick="mostrar('integridade')">Políticas de Integridade</button>
 
 </div>
 
-<div class="section">
+<div id="descricao" class="card" style="display:none;"></div>
+
+</section>
+
+
+
+<section class="section">
 
 <h2>Links</h2>
 
 <div class="card">
 
-LinkedIn  
-<br>
+LinkedIn<br>
 <a href="https://linkedin.com/in/frederico-jr-pereira-evangelista-755293ab">
 linkedin.com/in/frederico-jr-pereira-evangelista
 </a>
 
 <br><br>
 
-Lattes  
-<br>
+Lattes<br>
 <a href="http://lattes.cnpq.br/9738401556304717">
 lattes.cnpq.br/9738401556304717
 </a>
 
 </div>
 
-</div>
+</section>
+
 
 </div>
+
 
 <footer>
 
@@ -260,6 +291,48 @@ lattes.cnpq.br/9738401556304717
 
 </footer>
 
-</body>
 
+
+<script>
+
+function mostrar(area){
+
+const textos = {
+
+gov:`Implementação de modelos de governança institucional,
+estruturação de políticas e suporte à alta administração
+na tomada de decisões estratégicas.`,
+
+comp:`Implantação de programas de integridade e compliance,
+desenvolvimento de normativos e monitoramento da conformidade institucional.`,
+
+riscos:`Aplicação de metodologias de gestão de riscos,
+identificação, avaliação e mitigação de riscos organizacionais.`,
+
+planejamento:`Coordenação e monitoramento de planejamento estratégico,
+indicadores de desempenho e acompanhamento de metas institucionais.`,
+
+contabilidade:`Experiência em contabilidade pública e regulatória,
+análise de demonstrações contábeis e adequação às normas internacionais.`,
+
+financeira:`Gestão financeira corporativa, fluxo de caixa,
+planejamento orçamentário e análise de investimentos.`,
+
+controle:`Estruturação de controles internos e melhoria
+de processos administrativos.`,
+
+integridade:`Desenvolvimento de políticas de integridade
+e fortalecimento da cultura ética institucional.`
+
+};
+
+document.getElementById("descricao").style.display="block";
+document.getElementById("descricao").innerHTML=textos[area];
+
+}
+
+</script>
+
+
+</body>
 </html>
