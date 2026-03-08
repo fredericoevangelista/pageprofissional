@@ -8,66 +8,52 @@
 
 <title>Frederico Júnior Pereira Evangelista</title>
 
-<meta name="description" content="Subsecretário de Planejamento e Governança do Tribunal de Justiça de Roraima. Especialista em governança, planejamento estratégico, compliance, gestão de riscos e finanças corporativas.">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
 font-family:Poppins;
+margin:0;
 background:#f4f7fb;
 color:#333;
 }
 
-nav{
-position:fixed;
-width:100%;
-background:white;
-padding:15px 10%;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-z-index:1000;
-}
-
-nav a{
-margin-right:25px;
-text-decoration:none;
-font-weight:500;
-color:#1f3c6b;
-}
-
 header{
-height:100vh;
+background:linear-gradient(120deg,#1f3c6b,#4a78c2);
+color:white;
+padding:80px 10%;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:0 10%;
-background:linear-gradient(120deg,#1f3c6b,#4a78c2);
-color:white;
+flex-wrap:wrap;
 }
 
-.hero-text{
-max-width:550px;
+.header-text{
+max-width:600px;
 }
 
-.hero-text h1{
-font-size:48px;
+.profile{
+width:200px;
+height:200px;
+border-radius:50%;
+border:6px solid white;
+object-fit:cover;
+}
+
+h1{
+font-size:42px;
 margin-bottom:10px;
 }
 
-.hero-text p{
+.subtitle{
 font-size:18px;
+opacity:0.9;
 margin-bottom:20px;
-opacity:0.95;
 }
 
 .button{
+display:inline-block;
 padding:14px 28px;
 background:white;
 color:#1f3c6b;
@@ -76,41 +62,40 @@ text-decoration:none;
 font-weight:600;
 }
 
-.profile{
-width:220px;
-height:220px;
-border-radius:50%;
-border:6px solid white;
-object-fit:cover;
-}
-
 .container{
-max-width:1200px;
+max-width:1100px;
 margin:auto;
-padding:100px 20px;
+padding:60px 20px;
 }
 
 .section{
-margin-bottom:80px;
+margin-bottom:70px;
 }
 
 .section h2{
 color:#1f3c6b;
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 .card{
 background:white;
-padding:30px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
 line-height:1.6;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+grid-template-columns:1fr 1fr;
 gap:25px;
+margin-top:20px;
+}
+
+@media (max-width:800px){
+.grid{
+grid-template-columns:1fr;
+}
 }
 
 .timeline{
@@ -118,12 +103,12 @@ border-left:4px solid #4a78c2;
 padding-left:25px;
 }
 
-.timeline-item{
-margin-bottom:30px;
+.timeline div{
+margin-bottom:25px;
 position:relative;
 }
 
-.timeline-item:before{
+.timeline div:before{
 content:"";
 position:absolute;
 left:-33px;
@@ -136,23 +121,34 @@ border-radius:50%;
 
 .skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:15px;
+margin-top:20px;
 }
 
 .skill{
 background:#eef2f8;
-padding:14px;
+padding:15px;
 border-radius:6px;
-text-align:center;
+border:none;
+font-family:Poppins;
+cursor:pointer;
 font-weight:500;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#1f3c6b;
+color:white;
+transform:translateY(-2px);
 }
 
 footer{
 background:#1f3c6b;
 color:white;
 text-align:center;
-padding:40px;
+padding:30px;
+margin-top:50px;
 }
 
 </style>
@@ -161,29 +157,17 @@ padding:40px;
 
 <body>
 
-<nav>
-
-<a href="#sobre">Sobre</a>
-<a href="#resultados">Resultados</a>
-<a href="#experiencia">Experiência</a>
-<a href="#formacao">Formação</a>
-<a href="#contato">Contato</a>
-
-</nav>
-
-
 <header>
 
-<div class="hero-text">
+<div class="header-text">
 
 <h1>Frederico Júnior Pereira Evangelista</h1>
 
-<p>
-Subsecretário de Planejamento e Governança
-Tribunal de Justiça de Roraima
+<p class="subtitle">
+Subsecretário de Planejamento e Governança – Tribunal de Justiça de Roraima
 </p>
 
-<p>
+<p class="subtitle">
 Governança • Planejamento Estratégico • Compliance • Gestão de Riscos
 </p>
 
@@ -200,18 +184,18 @@ Baixar Currículo
 
 <div class="container">
 
-<section id="sobre" class="section">
+
+<section class="section">
 
 <h2>Resumo Executivo</h2>
 
 <div class="card">
 
 Executivo com mais de 20 anos de experiência nas áreas de governança institucional,
-contabilidade, finanças e planejamento estratégico em organizações públicas
-e grandes empresas do setor elétrico.
-
-Graduado em Ciências Contábeis (CRC ativo) e Mestre em Economia pela UFRGS,
-com MBA em Perícia, Contabilidade Pública e Controladoria pela FGV.
+contabilidade, finanças e planejamento estratégico em organizações públicas e
+grandes empresas do setor elétrico. Graduado em Ciências Contábeis (CRC ativo)
+e Mestre em Economia pela UFRGS, com MBA em Perícia, Contabilidade Pública e
+Controladoria pela FGV.
 
 Atualmente atua como <b>Subsecretário de Planejamento e Governança do Tribunal
 de Justiça do Estado de Roraima</b>, liderando iniciativas de planejamento
@@ -223,7 +207,7 @@ monitoramento do desempenho organizacional.
 </section>
 
 
-<section id="resultados" class="section">
+<section class="section">
 
 <h2>Resultados e Contribuições</h2>
 
@@ -232,9 +216,9 @@ monitoramento do desempenho organizacional.
 <div class="card">
 
 • Contribuição para os Selos de Excelência (2022 e 2024) e Diamante (2023)
-no Prêmio CNJ de Qualidade.
+no Prêmio CNJ de Qualidade.<br><br>
 
-• Implementação do Programa de Integridade e Compliance no TJRR.
+• Implementação do Programa de Integridade e Compliance no TJRR.<br><br>
 
 • Liderança na revisão e monitoramento do Plano Estratégico Institucional.
 
@@ -242,9 +226,9 @@ no Prêmio CNJ de Qualidade.
 
 <div class="card">
 
-• Experiência executiva em contabilidade, finanças e governança no setor elétrico.
+• Experiência executiva em contabilidade, finanças e governança no setor elétrico.<br><br>
 
-• Adequação de demonstrações contábeis às normas internacionais IFRS.
+• Adequação de demonstrações contábeis às normas internacionais IFRS.<br><br>
 
 • Suporte estratégico à alta administração em decisões institucionais.
 
@@ -255,60 +239,40 @@ no Prêmio CNJ de Qualidade.
 </section>
 
 
-<section id="experiencia" class="section">
+<section class="section">
 
 <h2>Trajetória Profissional</h2>
 
 <div class="timeline">
 
-<div class="timeline-item">
-
+<div>
 <b>2022 – Atual</b><br>
-
-Tribunal de Justiça de Roraima<br>
-
-Subsecretário de Planejamento e Governança.
-
+Tribunal de Justiça do Estado de Roraima<br>
+Subsecretário de Planejamento e Governança
 </div>
 
-<div class="timeline-item">
-
+<div>
 <b>2019 – 2022</b><br>
-
 Hiroshi Consultoria Empresarial<br>
-
-Consultor Contábil e Financeiro.
-
+Consultor Contábil e Financeiro
 </div>
 
-<div class="timeline-item">
-
+<div>
 <b>2003 – 2019</b><br>
-
 Eletrobras Distribuição Roraima<br>
-
-Gerente de Finanças, Gerente de Contabilidade e Assessor Executivo.
-
+Gerente de Finanças, Contabilidade e Assessor Executivo
 </div>
 
-<div class="timeline-item">
-
+<div>
 <b>2015 – 2017</b><br>
-
 Companhia de Eletricidade do Amapá<br>
-
-Assessor Executivo da Diretoria Administrativa e Financeira.
-
+Assessor Executivo da Diretoria Administrativa e Financeira
 </div>
 
-<div class="timeline-item">
-
+<div>
 <b>2012 – 2015</b><br>
-
 Eletrobras Distribuição Amazonas<br>
-
-Assessor Executivo da Diretoria de Gestão.
-
+Assessor Executivo da Diretoria de Gestão
 </div>
 
 </div>
@@ -316,7 +280,7 @@ Assessor Executivo da Diretoria de Gestão.
 </section>
 
 
-<section id="formacao" class="section">
+<section class="section">
 
 <h2>Formação Acadêmica</h2>
 
@@ -333,33 +297,38 @@ Bacharel em Ciências Contábeis – UPIS (2002)
 </section>
 
 
+
 <section class="section">
 
 <h2>Competências</h2>
 
 <div class="skills">
 
-<div class="skill">Governança Institucional</div>
-<div class="skill">Planejamento Estratégico</div>
-<div class="skill">Compliance</div>
-<div class="skill">Gestão de Riscos</div>
-<div class="skill">Contabilidade e IFRS</div>
-<div class="skill">Gestão Financeira</div>
-<div class="skill">Controles Internos</div>
-<div class="skill">Gestão Pública</div>
+<button class="skill" onclick="mostrar('gov')">Governança Institucional</button>
+<button class="skill" onclick="mostrar('planejamento')">Planejamento Estratégico</button>
+<button class="skill" onclick="mostrar('compliance')">Compliance</button>
+<button class="skill" onclick="mostrar('riscos')">Gestão de Riscos</button>
+<button class="skill" onclick="mostrar('contabilidade')">Contabilidade e IFRS</button>
+<button class="skill" onclick="mostrar('financeira')">Gestão Financeira</button>
+<button class="skill" onclick="mostrar('controles')">Controles Internos</button>
+<button class="skill" onclick="mostrar('publica')">Gestão Pública</button>
 
 </div>
+
+<div id="descricao" class="card" style="display:none;margin-top:20px;"></div>
 
 </section>
 
 
-<section id="contato" class="section">
+
+<section class="section">
 
 <h2>Links Profissionais</h2>
 
 <div class="card">
 
 LinkedIn<br>
+
 <a href="https://linkedin.com/in/frederico-jr-pereira-evangelista-755293ab">
 linkedin.com/in/frederico-jr-pereira-evangelista
 </a>
@@ -367,6 +336,7 @@ linkedin.com/in/frederico-jr-pereira-evangelista
 <br><br>
 
 Currículo Lattes<br>
+
 <a href="http://lattes.cnpq.br/9738401556304717">
 lattes.cnpq.br/9738401556304717
 </a>
@@ -378,11 +348,45 @@ lattes.cnpq.br/9738401556304717
 
 </div>
 
+
 <footer>
 
 © 2026 – Frederico Júnior Pereira Evangelista
 
 </footer>
+
+
+<script>
+
+function mostrar(area){
+
+const textos = {
+
+gov:`Estruturação de modelos de governança institucional e suporte à alta administração na tomada de decisões estratégicas.`,
+
+planejamento:`Coordenação do planejamento estratégico institucional, monitoramento de indicadores e acompanhamento de metas.`,
+
+compliance:`Implantação de programas de integridade e compliance e desenvolvimento de políticas de conformidade institucional.`,
+
+riscos:`Aplicação de metodologias de gestão de riscos organizacionais.`,
+
+contabilidade:`Experiência em contabilidade regulatória e demonstrações financeiras conforme normas IFRS.`,
+
+financeira:`Gestão financeira corporativa, planejamento orçamentário e análise de investimentos.`,
+
+controles:`Estruturação de controles internos e melhoria de processos organizacionais.`,
+
+publica:`Atuação em governança pública e gestão institucional no Poder Judiciário.`
+
+};
+
+document.getElementById("descricao").style.display="block";
+document.getElementById("descricao").innerHTML=textos[area];
+
+}
+
+</script>
+
 
 </body>
 </html>
