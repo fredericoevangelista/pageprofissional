@@ -12,6 +12,10 @@
 
 <style>
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:Poppins;
 margin:0;
@@ -19,10 +23,31 @@ background:#f4f7fb;
 color:#333;
 }
 
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+padding:15px 10%;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+nav a{
+margin-right:25px;
+text-decoration:none;
+font-weight:600;
+color:#1f3c6b;
+}
+
+nav a:hover{
+color:#4a78c2;
+}
+
 header{
 background:linear-gradient(120deg,#1f3c6b,#4a78c2);
 color:white;
-padding:80px 10%;
+padding:140px 10% 80px 10%;
 display:flex;
 align-items:center;
 justify-content:space-between;
@@ -69,7 +94,7 @@ padding:60px 20px;
 }
 
 .section{
-margin-bottom:70px;
+margin-bottom:80px;
 }
 
 .section h2{
@@ -140,7 +165,25 @@ transition:0.3s;
 .skill:hover{
 background:#1f3c6b;
 color:white;
-transform:translateY(-2px);
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:6px;
+border:1px solid #ccc;
+font-family:Poppins;
+}
+
+button{
+padding:12px 25px;
+margin-top:15px;
+background:#1f3c6b;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
 }
 
 footer{
@@ -156,6 +199,17 @@ margin-top:50px;
 </head>
 
 <body>
+
+<nav>
+
+<a href="#sobre">Sobre</a>
+<a href="#resultados">Resultados</a>
+<a href="#experiencia">Experiência</a>
+<a href="#formacao">Formação</a>
+<a href="#contato">Contato</a>
+
+</nav>
+
 
 <header>
 
@@ -185,7 +239,7 @@ Baixar Currículo
 <div class="container">
 
 
-<section class="section">
+<section id="sobre" class="section">
 
 <h2>Resumo Executivo</h2>
 
@@ -207,7 +261,7 @@ monitoramento do desempenho organizacional.
 </section>
 
 
-<section class="section">
+<section id="resultados" class="section">
 
 <h2>Resultados e Contribuições</h2>
 
@@ -239,7 +293,7 @@ no Prêmio CNJ de Qualidade.<br><br>
 </section>
 
 
-<section class="section">
+<section id="experiencia" class="section">
 
 <h2>Trajetória Profissional</h2>
 
@@ -280,7 +334,7 @@ Assessor Executivo da Diretoria de Gestão
 </section>
 
 
-<section class="section">
+<section id="formacao" class="section">
 
 <h2>Formação Acadêmica</h2>
 
@@ -295,7 +349,6 @@ Bacharel em Ciências Contábeis – UPIS (2002)
 </div>
 
 </section>
-
 
 
 <section class="section">
@@ -320,14 +373,29 @@ Bacharel em Ciências Contábeis – UPIS (2002)
 </section>
 
 
+<section id="contato" class="section">
 
-<section class="section">
-
-<h2>Links Profissionais</h2>
+<h2>Contato</h2>
 
 <div class="card">
 
-LinkedIn<br>
+Email institucional:<br>
+
+<a href="mailto:frederico.evangelista@tjrr.jus.br">
+frederico.evangelista@tjrr.jus.br
+</a>
+
+<br><br>
+
+Email pessoal:<br>
+
+<a href="mailto:fredericojr.evangelista@gmail.com">
+fredericojr.evangelista@gmail.com
+</a>
+
+<br><br>
+
+LinkedIn:<br>
 
 <a href="https://linkedin.com/in/frederico-jr-pereira-evangelista-755293ab">
 linkedin.com/in/frederico-jr-pereira-evangelista
@@ -335,11 +403,19 @@ linkedin.com/in/frederico-jr-pereira-evangelista
 
 <br><br>
 
-Currículo Lattes<br>
+<h3>Enviar mensagem</h3>
 
-<a href="http://lattes.cnpq.br/9738401556304717">
-lattes.cnpq.br/9738401556304717
-</a>
+<form>
+
+<input type="text" placeholder="Seu nome">
+
+<input type="email" placeholder="Seu email">
+
+<textarea rows="4" placeholder="Mensagem"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
 
 </div>
 
@@ -362,21 +438,21 @@ function mostrar(area){
 
 const textos = {
 
-gov:`Estruturação de modelos de governança institucional e suporte à alta administração na tomada de decisões estratégicas.`,
+gov:`Estruturação de modelos de governança institucional e suporte à alta administração.`,
 
-planejamento:`Coordenação do planejamento estratégico institucional, monitoramento de indicadores e acompanhamento de metas.`,
+planejamento:`Coordenação do planejamento estratégico institucional e monitoramento de indicadores.`,
 
-compliance:`Implantação de programas de integridade e compliance e desenvolvimento de políticas de conformidade institucional.`,
+compliance:`Implementação de programas de integridade e compliance.`,
 
 riscos:`Aplicação de metodologias de gestão de riscos organizacionais.`,
 
-contabilidade:`Experiência em contabilidade regulatória e demonstrações financeiras conforme normas IFRS.`,
+contabilidade:`Experiência em contabilidade regulatória e normas IFRS.`,
 
-financeira:`Gestão financeira corporativa, planejamento orçamentário e análise de investimentos.`,
+financeira:`Gestão financeira corporativa e planejamento orçamentário.`,
 
-controles:`Estruturação de controles internos e melhoria de processos organizacionais.`,
+controles:`Estruturação de controles internos e melhoria de processos.`,
 
-publica:`Atuação em governança pública e gestão institucional no Poder Judiciário.`
+publica:`Experiência em governança pública e gestão institucional.`
 
 };
 
